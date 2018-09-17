@@ -1,0 +1,64 @@
+1. tmux new -s session1 新建会话
+使用 tmux new -s 命令新建一个会话 -s (其实是session的头字母)。后面指定会话名即可。运行之后会从shell的终端环境进入到会话环境中，并停留在刚才新建的会话中。
+
+2. ctrl+b d 退出会话，回到shell的终端环境
+
+
+3. tmux ls 终端环境查看会话列表
+
+
+4. ctrl+b s 会话环境查看会话列表
+
+
+5. tmux a -t session1 从终端环境进入会话
+
+
+6. tmux kill-session -t session1 销毁会话
+
+
+7. tmux rename -t old_session_name  new_session_name  重命名会话
+
+
+8. ctrl + b $ 重命名会话 (在会话环境中)
+
+
+0.crtl+b , (组合键之后按一个逗号)来修改当前窗口的名字
+
+1.ctrl+b c 创建之后会多出一个窗口
+
+2. 切换window
+
+在同一个会话的多个窗口之间可以通过如下快捷键进行切换：
+
+ctrl+b p (previous的首字母) 切换到上一个window。
+
+ctrl+b n (next的首字母) 切换到下一个window。
+
+ctrl+b 0 切换到0号window，依次类推，可换成任意窗口序号
+
+ctrl+b w (windows的首字母) 列出当前session所有window，通过上、下键切换窗口
+ctrl+b l (字母L的小写)相邻的window切换
+
+3. ctrl+b & 关闭window
+ctrl+b & 关闭当前window，会给出提示是否关闭当前窗口，按下y确认即可。
+
+1. ctrl+b % 垂直分屏(组合键之后按一个百分号)，用一条垂线把当前窗口分成左右两屏。
+
+
+2. ctrl+b " 水平分屏(组合键之后按一个双引号)，用一条水平线把当前窗口分成上下两屏。
+
+
+3. 切换pane
+
+ctrl+b o 依次切换当前窗口下的各个pane。
+
+ctrl+b Up|Down|Left|Right 根据按箭方向选择切换到某个pane。
+
+ctrl+b Space (空格键) 对当前窗口下的所有pane重新排列布局，每按一次，换一种样式。
+
+ctrl+b z 最大化当前pane。再按一次后恢复。
+
+
+4. 关闭pane
+
+ctrl+b x 关闭当前使用中的pane，操作之后会给出是否关闭的提示，按y确认即关闭。
